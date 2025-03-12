@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    background-image: url('k.jpg');
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px 10px rgba(231, 76, 60, 0.6); /* Glow intensifies on hover */
+
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #c0392b; /* Dark Pink */
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.highlight {
+    color: #e74c3c; /* Light Pink */
+    text-shadow: 0 2px 5px rgba(231, 76, 60, 0.5);
+}
+
+.faculty, .developers {
+    margin: 40px 0;
+    padding: 20px;
+    background: #f9f9fb;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #c0392b; /* Dark Pink */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e74c3c; /* Light Pink */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.developer-item {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px rgba(231, 76, 60, 0.3); /* Glowing effect */
+    transition: box-shadow 0.3s ease;
+}
+
+.developer-item:hover {
+    box-shadow: 0 0 25px 10px rgba(231, 76, 60, 0.6); /* Glow intensifies on hover */
+}
+
+.lead-developer {
+    border: 2px solid #e74c3c; /* Emphasize lead developers */
+}
+
+.developer-item h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.developer-item p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 1.1em;
+    color: #888;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+
+/* Hover and subtle animations */
+header h1, section h2 {
+    transition: color 0.3s ease;
+}
+
+header h1:hover, section h2:hover {
+    color: #e74c3c; /* Light Pink on hover */
+}
+
+/* Home Button Styles */
+.home-button-container {
+    margin-top: 40px;
+}
+
+.home-button {
+    display: inline-block;
+    background-color: #e74c3c; /* Light Pink */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3); /* Glowing effect */
+}
+
+.home-button:hover {
+    background-color: #c0392b; /* Dark Pink on hover */
+    box-shadow: 0 5px 20px rgba(231, 76, 60, 0.5);
+}

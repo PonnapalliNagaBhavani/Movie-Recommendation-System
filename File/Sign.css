@@ -1,0 +1,106 @@
+/* Style for the entire form container */
+body {
+    font-family: 'Times New Roman', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;;
+    margin: 0;
+    min-height: 167vh;
+    height:auto;
+    background-size: cover; 
+    background-image: url('ae.jpg'); /* Path to the image */
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-position: -50px center;
+}
+
+.container {
+    padding: 20px;  
+    background-image: url('a.jpg');
+    padding: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 400px;
+    box-sizing: border-box;
+    border-right: 20px solid black;
+    border-top: 20px solid black;
+    position: absolute;     /* Position it absolutely */
+    left: 20px;           /* Distance from the right side */
+    top: 90%;              /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f3f3f3;
+}
+
+span {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #f3f3f3;
+}
+
+.input-container {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #008ecf;
+    outline: none;
+}
+
+
+
+/* Error message styling */
+small {
+    color: red;
+    position: absolute;
+    bottom: -20px;
+    left: 5px;
+    display: none;
+}
+
+/* Show the error when needed */
+.input-container.error small {
+    display: block;
+}
+.input-container.error input {
+    border-color: red;
+}
+
+/* Sign.css */
+
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white;              /* White text */
+    padding: 15px 20px;        /* Vertical and horizontal padding */
+    border: none;              /* No border */
+    border-radius: 5px;        /* Rounded corners */
+    cursor: pointer;           /* Pointer cursor on hover */
+    font-size: 16px;           /* Font size */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05);     /* Slightly increase size */
+}
+
+/* Button active effect */
+button:active {
+    background-color: #3e8e41; /* Even darker green when pressed */
+    transform: scale(0.95);     /* Slightly decrease size */
+}

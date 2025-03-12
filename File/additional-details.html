@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional Details - Sign Up</title>
+    <link rel="stylesheet" href="Sign.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="signup-form" action="signup.php" method="POST" onsubmit="return validateForm()">
+                <h1>Create Account</h1>
+                <span>Please provide your details below</span>
+                <div class="input-container">
+                    <input type="text" name="name" placeholder="Name" id="name" required />
+                    <small>Error message</small>
+                </div>
+                <div class="input-container">
+                    <input type="email" name="email" placeholder="Email" id="email" required />
+                    <small>Error message</small>
+                </div>
+                <div class="input-container">
+                    <input type="password" name="password" placeholder="Password" id="password" required />
+                    <small>Error message</small>
+                </div>
+                <div class="input-container">
+                    <input type="password" name="confirm_password" placeholder="Retype Password" id="confirm_password" required />
+                    <small>Error message</small>
+                </div>
+                <div class="input-container">
+                    <input type="number" name="age" placeholder="Age" id="age" required />
+                    <small>Error message</small>
+                </div>
+                <div class="input-container">
+                    <input type="text" name="gender" placeholder="Gender" id="gender" required />
+                    <small>Error message</small>
+                </div>
+                <div class="input-container">
+                    <input type="text" name="phone" placeholder="Phone Number" id="phone" required />
+                    <small>Error message</small>
+                </div>
+                <div class="input-container">
+                    <input type="text" name="location" placeholder="Location" id="location" required />
+                    <small>Error message</small>
+                </div>
+                <div class="input-container">
+                    <input type="date" name="dob" placeholder="Date of Birth" id="dob" required />
+                    <small>Error message</small>
+                </div>
+                <button type="submit">Sign Up</button>
+                <br>
+                <br>
+                <a href="Login.html" class="back-to-login" style="color:rgb(46, 191, 243);font-size:19px">Back to Login</a>
+            </form>
+        </div>
+    </div>
+    <script src="validation.js"></script>
+</body>
+
+</html>

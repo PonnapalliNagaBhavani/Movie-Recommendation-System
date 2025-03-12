@@ -1,0 +1,164 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #1c1c1c, #3b3b3b); /* Dark gradient background */
+    color: #fff; /* Default text color */
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background */
+    color: #fff;
+    padding: 30px 20px; /* Increased padding */
+    text-align: center;
+    border-radius: 10px; /* Rounded corners for the header */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Soft shadow for header */
+}
+
+h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    width: 350px; /* Increased width of the search bar */
+    padding: 15px; /* Padding for the input */
+    border: 2px solid #feb47b; /* Border color */
+    border-radius: 25px; /* Rounded edges */
+    font-size: 1.2em; /* Increased font size */
+    outline: none; /* Remove default outline */
+    transition: border 0.3s ease; /* Smooth transition for border */
+}
+
+input[type="text"]:focus {
+    border-color: #ff7e5f; /* Change border color on focus */
+}
+
+button {
+    padding: 15px 25px; /* Padding for the button */
+    margin-left: 10px; /* Space between input and button */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded edges */
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    color: #fff; /* Button text color */
+    font-size: 1.2em; /* Increased button font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+button:hover {
+    background: linear-gradient(to right, #feb47b, #ff7e5f); /* Inverse gradient on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between movie cards */
+}
+
+.movie-card {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    width: 160px; /* Slightly increased width */
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+}
+
+.movie-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 10px; /* Rounded edges for images */
+}
+
+.movie-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.movie-card p {
+    font-size: 0.9em;
+    color: #ccc; /* Lighter text color for descriptions */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    input[type="text"] {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .movie-card {
+        width: 120px; /* Decrease card width on smaller screens */
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    color: #ccc; /* Light gray text for footer */
+}
+
+#recommendationsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.movie {
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent dark background */
+    color: white; /* Change text color to white for better contrast */
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#recommendationsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.movie {
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Dark background to match theme */
+    color: white; /* White text for better readability */
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

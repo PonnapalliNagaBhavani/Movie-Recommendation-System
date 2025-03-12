@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    background-image: url('k.jpg');
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #2b2b52;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.highlight {
+    color: #27ae60;
+    text-shadow: 0 2px 5px rgba(39, 174, 96, 0.5);
+}
+
+.clients {
+    margin: 40px 0;
+    padding: 20px;
+    background: #f9f9fb;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #27ae60;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.client-item {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px rgba(39, 174, 96, 0.3); /* Glowing effect */
+    transition: box-shadow 0.3s ease;
+}
+
+.client-item:hover {
+    box-shadow: 0 0 25px 10px rgba(39, 174, 96, 0.6); /* Glow intensifies on hover */
+}
+
+.client-item h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #2b2b52;
+}
+
+.client-item p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 1.1em;
+    color: #888;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+
+/* Hover and subtle animations */
+header h1, section h2 {
+    transition: color 0.3s ease;
+}
+
+header h1:hover, section h2:hover {
+    color: #27ae60;
+}
+.home-button-container {
+    margin-top: 40px;
+}
+
+.home-button {
+    display: inline-block;
+    background-color: #27ae60; /* Primary button color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 1.2em; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from the link */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background and shadow */
+    box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3); /* Glowing shadow effect */
+}
+
+.home-button:hover {
+    background-color: #2ecc71; /* Change to a lighter green on hover */
+    box-shadow: 0 5px 20px rgba(39, 174, 96, 0.5); /* Intensity of glow increases on hover */
+}
